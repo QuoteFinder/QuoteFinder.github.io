@@ -6,13 +6,24 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
     <script src="resources/PapaParse/papaparse.js"></script>
   </head>
   <body>
+    <!--<script type = "text/javascript">
+      console.log("Attempting to load");
+      d3.csv("resources/initialVersionV3.csv", function(data) {
+          for (var i = 0; i < data.length; i++) {
+              console.log(data.season[i]);
+              console.log(data.text[i]);
+          }
+      });
+      </script>-->
     <h1>Quote Finder</h1>    
-    <div class = "custom-file text-center"> <!-- this is for uploading a file-->
+    <!--<div class = "custom-file text-center">  this is for uploading a file
       <input type="file" style="text-align:center" id="file-selector" >
-    </div>
+    </div> -->
     <form>
       <!--<input type="text" id="input_id" value=""> -->
       <div class="input-group mb-3"> <!-- this is for searching quote-->
