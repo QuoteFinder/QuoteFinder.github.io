@@ -5,11 +5,13 @@
     <title>Quote Finder</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <script charset="UTF-8" src="resources/fuzzball.js-master/dist/fuzzball.umd.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
     <script src="resources/PapaParse/papaparse.js"></script>
   </head>
   <body>
+
   <!--<script type = "text/javascript">
       console.log("Attempting to load");
       d3.csv("resources/initialVersionV3.csv", function(data) {
@@ -17,24 +19,27 @@
               console.log(data.season[i]);
               console.log(data.text[i]);
           }
-      });-->
-      </script>
-    <h1>Quote Finder</h1>    
-    <div class = "custom-file text-center">  <!--this is for uploading a file-->
+      });
+      </script>-->
+      <div>
+      <!--<img class = "headerPic" src="resources/psych.jpg" alt="Italian Trulli">-->
+    </div>
+    <h1>QUOTE FINDER</h1>
+    <!--<div class = "custom-file text-center">  <!--this is for uploading a file
       <input type="file" style="text-align:center" id="file-selector" >
-    </div> 
-    <form>
+    </div> -->
+    <div>
       <!--<input type="text" id="input_id" value=""> -->
       <div class="input-group mb-3"> <!-- this is for searching quote-->
         <input type="text" id = "input_id" class="form-control" placeholder="Insert Quote Here!" aria-label="Recipient's username" aria-describedby="basic-addon2">
         <div class="input-group-append">
-          <button class="btn btn-outline-secondary" onclick = "wawa()" type="button">Search</button>
+          <button class="btn btn-outline-secondary" onclick = "wawa()" id = "searchButton" type="button">Search</button>
         </div>
         <!--<input type="button" id = "submit" value="Submit" onclick="wawa()" />-->
-      </div>      
+      </div>
       <div id="alert" style="color: red"></div>
-    </form>
-    <p>The following are occurences of the word:</p>
+    </div>
+    <p id = "Status Update">The following are occurences of the word:</p>
 
     <ol style="list-style-type: square type bar;" type = "1" id = "list" > <!-- changed to list in the tutorial -->
     </ol>

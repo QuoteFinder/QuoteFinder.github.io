@@ -17,13 +17,16 @@ p, li {
 
 
 html {
-  background-color: #00539F;
+  background-color: #779ecb;
 }
-
+.headerPic {
+  width:50%;
+  height:25%;
+}
 body {
   width: max-width * .90;
   margin: 0 auto;
-  background-color: #FF9500;
+  background-color: #74aa12;
   padding-left: 75px;
   padding-right: 75px;
   padding: 100 20px 20px 20px;
