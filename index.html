@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id = "fullHTML">
   <head>
     <meta charset="utf-8">
     <title>Quote Finder</title>
@@ -10,7 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
     <script src="resources/PapaParse/papaparse.js"></script>
   </head>
-  <body>
+  <body id = "fullBody">
 
   <!--<script type = "text/javascript">
       console.log("Attempting to load");
@@ -23,11 +23,28 @@
       </script>-->
       <div>
       <!--<img class = "headerPic" src="resources/psych.jpg" alt="Italian Trulli">-->
-    </div>
+    </div class = "container">
     <h1>QUOTE FINDER</h1>
     <!--<div class = "custom-file text-center">  <!--this is for uploading a file
       <input type="file" style="text-align:center" id="file-selector" >
     </div> -->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+              <img src="resources/psych.jpg" alt="Psych" style="width:50%"  onclick = "setShow(1)">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail" >
+              <img src="resources/theMentalist.jpg" alt="The Mentalist" style="width:50%" onclick = "setShow(2)">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+              <img src="resources/whiteCollar.jpg" alt="White Collar" style="width:50%" onclick = "setShow(3)">
+          </div>
+        </div>
+      </div>
     <div>
       <!--<input type="text" id="input_id" value=""> -->
       <div class="input-group mb-3"> <!-- this is for searching quote-->
