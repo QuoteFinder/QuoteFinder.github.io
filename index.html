@@ -9,46 +9,52 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
     <script src="resources/PapaParse/papaparse.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171704453-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-171704453-1');
+    </script>
   </head>
   <body id = "fullBody">
-
-  <!--<script type = "text/javascript">
-      console.log("Attempting to load");
-      d3.csv("resources/initialVersionV3.csv", function(data) {
-          for (var i = 0; i < data.length; i++) {
-              console.log(data.season[i]);
-              console.log(data.text[i]);
-          }
-      });
-      </script>-->
       <div>
-      <!--<img class = "headerPic" src="resources/psych.jpg" alt="Italian Trulli">-->
     </div class = "container">
     <h1>QUOTE FINDER</h1>
-    <!--<div class = "custom-file text-center">  <!--this is for uploading a file
-      <input type="file" style="text-align:center" id="file-selector" >
-    </div> -->
-      <div class="row">
-        <div class="col-md-4">
+
+      <div class="row no-gutters">
+        <div class="col-sm">
           <div class="thumbnail">
-              <img src="resources/psych.jpg" alt="Psych" style="width:50%"  onclick = "setShow(1)">
+              <img id = 'Psych' class = "img-thumbnail" src="resources/psych.jpg" alt="Psych" style="width:100%"  onclick = "setShow(1)">
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm">
+          <div class="thumbnail">
+              <img id = 'Monk' class = "img-thumbnail" src="resources/monk.jpg" alt="Monk" style="width:100%"  onclick = "setShow(4)">
+          </div>
+        </div>
+        <div class="col-sm">
           <div class="thumbnail" >
-              <img src="resources/theMentalist.jpg" alt="The Mentalist" style="width:50%" onclick = "setShow(2)">
+              <img id = 'The Mentalist' class = "img-thumbnail" src="resources/theMentalist.jpg" alt="The Mentalist" style="width:100%" onclick = "setShow(2)">
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm">
           <div class="thumbnail">
-              <img src="resources/whiteCollar.jpg" alt="White Collar" style="width:50%" onclick = "setShow(3)">
+              <img id = 'White Collar' class = "img-thumbnail" src="resources/whiteCollar.jpg" alt="White Collar" style="width:100%" onclick = "setShow(3)">
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="thumbnail">
+              <img id = 'Leverage' class = "img-thumbnail" src="resources/leverage.jpg" alt="Leverage" style="width:100%"  onclick = "setShow(5)">
           </div>
         </div>
       </div>
     <div>
       <!--<input type="text" id="input_id" value=""> -->
       <div class="input-group mb-3"> <!-- this is for searching quote-->
-        <input type="text" id = "input_id" class="form-control" placeholder="Insert Quote Here!" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <input type="text" id = "input_id" class="form-control" placeholder="Click on the show you want to search and type in a phrase or word here! (Ex. &quot;Pluto&quot;)" aria-label="Recipient's username" aria-describedby="basic-addon2">
         <div class="input-group-append">
           <button class="btn btn-outline-secondary" onclick = "wawa()" id = "searchButton" type="button">Search</button>
         </div>
@@ -56,11 +62,14 @@
       </div>
       <div id="alert" style="color: red"></div>
     </div>
-    <p id = "Status Update">The following are occurences of the word:</p>
+    <p id = "Status Update"></p>
 
     <ol style="list-style-type: square type bar;" type = "1" id = "list" > <!-- changed to list in the tutorial -->
     </ol>
-
+    <p id="onlyBegin"> Made this because I was really hyped for Psych 2: Lassie Come Home. Check it out on Peacock once it comes out on July 15th!!! </p>
+    <p id="onlyBegin2" align = "center" class = "h3"> Credit to u/psyk27 from reddit as this was inspired by their python psychphinder. Refer to their github repo <a href="https://github.com/psyk27/psychphinder" target="_blank"> here</a>! </p>
+    <p align = "center"> For any questions or suggestions, please send an email to <a href = "mailto: quotefinder120@gmail.com">quotefinder120@gmail.com</a></p>
     <script src="scripts/main.js"></script>
   </body>
+
 </html>

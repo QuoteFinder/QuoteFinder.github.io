@@ -4,11 +4,22 @@ html {
   background-color: #779ecb;
 }
 
-
 p, li {
   font-size: 16px;
   line-height: 2;
   letter-spacing: 1px;
+}
+
+
+.bold{
+  text
+}
+
+.thumbnail{
+  padding: 6px;
+}
+.img-thumbnail {
+  border: 5px solid black;
 }
 
 .headerPic {
