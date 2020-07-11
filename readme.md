@@ -8,10 +8,9 @@ Available TV Shows to look through:
 4) White Collar
 5) Leverage
 
-Known Issue: The CSV Files being used are not properly cleaned so you may see captioning credits during some searches.
-
 Credit to **u/psyk27** from reddit as this was inspired by their python psychphinder. Refer to their github repo **[here][psykRepo]**.
 
+**Known Issue**: The CSV Files being used are not properly cleaned so you may see captioning credits during some searches. If you come across any other issues or have suggestions, either post the issue on github or email me at [quotefinder120@gmail.com](mailto:quotefinder120@gmail.com).
 
 
 
