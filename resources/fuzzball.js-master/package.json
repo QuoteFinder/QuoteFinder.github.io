@@ -24,7 +24,7 @@
     "jsdoc": "^3.6.3",
     "jsdoc-to-markdown": "^5.0.3",
     "lodash-cli": "^4.17.5",
-    "mocha": "^7.1.1",
+    "mocha": "^10.2.0",
     "uglifyjs": "~2.4.10"
   },
   "repository": {
